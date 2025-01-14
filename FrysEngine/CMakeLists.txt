@@ -5,6 +5,9 @@
 # Add source to this project's executable.
 add_executable (FrysEngine "FrysEngine.cpp" "FrysEngine.h")
 
+# Link to the actual SDL3 library.
+target_link_libraries(FrysEngine PRIVATE SDL3::SDL3)
+
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET FrysEngine PROPERTY CXX_STANDARD 20)
 endif()

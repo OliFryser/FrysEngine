@@ -1,12 +1,10 @@
-﻿// FrysEngine.cpp : Defines the entry point for the application.
-//
-
-#include "FrysEngine.h"
+﻿#include "FrysEngine.h"
+#include "SDL3/SDL.h"
 
 using namespace std;
 
 int main()
 {
-	cout << "Hello CMake." << endl;
+	SDL_Log("%s", "Hello SDL!");
 	return 0;
 }
